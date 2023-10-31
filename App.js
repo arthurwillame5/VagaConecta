@@ -34,7 +34,6 @@ export default function App() {
     <View style={styles.PrinterIcons}>
        <Icon name='printer' size={30} onPress={click}/>
     </View>
-
     <View style={styles.ReloadIcons}>
       <Icon name='reload1' size={29} onPress={click}/>
 
