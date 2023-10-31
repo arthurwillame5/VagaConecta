@@ -1,11 +1,22 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import Icon from 'react-native-vector-icons/AntDesign'
+
+
 
 const Button = ({ lanbelButton, onpress  }) => {
     return (
         <TouchableOpacity style = {styles.button} onPress={onpress}>
             <Text style={styles.buttonText}>{lanbelButton}</Text>
         </TouchableOpacity>
+    );
+}
+
+const Buttonicon = ({click}) => {
+    return (
+    <TouchableOpacity onPress={click}>
+        <Icon/>
+    </TouchableOpacity>
     );
 }
 
@@ -25,5 +36,5 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         fontWeight: "bold"
-    }
+    },
 }); 
