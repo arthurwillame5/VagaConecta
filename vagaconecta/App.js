@@ -18,17 +18,18 @@ export default function App() {
     <View style={styles.container}>
       <Box/>
       <Title/>
-    <View style={[styles.Contador, {bottom: 145,}]}>
+    <View style={[styles.Contador]}>
       <Contador/>
     </View>
 
-    <View style={[styles.button, {bottom: 250, right: 90,}]}>
+    <View style={[styles.button_entrada]}>
       <Button lanbelButton="Entrada" onpress={signin} />
-    </View>
+    </View> 
 
-    <View style={[styles.button, {bottom: 290, left: 90,}]}>
+     <View style={[styles.button_buscar]}> 
       <Button lanbelButton="Buscar" onpress={signin} />
     </View>
+
     <View style={styles.IconsContainer}>
        {/* <IconsCli onpress={signin} style={style.icon} size={30}/>  */}
     </View>
@@ -49,7 +50,31 @@ const styles = StyleSheet.create({
   IconsContainer: {
     backgroundColor: 'black'
   },
-
+  button_entrada: {
+    display: 'flex',
+    //backgroundColor: 'black',
+   // width: '40%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+   // margin: '10%',
+    bottom: '61.4%',
+    right: '9%',
+  },
+  button_buscar: {
+    display: 'flex',
+   // backgroundColor: 'black',
+  //width: '40%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    //margin: 10,
+    bottom: '71%',
+    left: '10%',
+  },
+   Contador: {
+    bottom: '15%',
+   }
 });
  
 
