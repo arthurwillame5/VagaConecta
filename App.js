@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
    // backgroundColor: 'black',
     bottom: '53%',
     right: '40%',
+    //display: 'flex'
   }
 });
  
