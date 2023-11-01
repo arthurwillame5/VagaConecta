@@ -103,6 +103,6 @@ const styles = StyleSheet.create({
 });
  
 
-// MASTER
+// segundary
 
 
