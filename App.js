@@ -29,6 +29,7 @@ export default function App() {
 
        <View style={[styles.button_buscar]}> 
         <Button lanbelButton="Buscar" onPress={signin} />
+        
       </View>
 
     <View style={styles.PrinterIcons}>
@@ -36,7 +37,10 @@ export default function App() {
     </View>
     <View style={styles.ReloadIcons}>
       <Icon name='reload1' size={29} onPress={click}/>
+    </View>
 
+    <View style={styles.bars}>
+      <Icon name='bars' size={30} onPress={click}/>
     </View>
 
     </View>
@@ -61,7 +65,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
    // margin: '10%',
-    bottom: '55.4%',
+    bottom: '51.4%',
     right: '9%',
   },
   button_buscar: {
@@ -72,7 +76,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     //margin: 10,
-    bottom: '65%',
+    bottom: '61%',
     left: '10%',
   },
    Contador: {
@@ -90,10 +94,16 @@ const styles = StyleSheet.create({
     bottom: '50%',
     left: '43%',
    // backgroundColor: 'black',
+  },
+  bars: {
+   // backgroundColor: 'black',
+    bottom: '53%',
+    right: '40%',
   }
-
 });
  
 
 // alteração
+// está na ramificação teste
+
 
