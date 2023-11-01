@@ -103,7 +103,6 @@ const styles = StyleSheet.create({
 });
  
 
-// alteração
-// está na ramificação teste
+// MASTER
 
 
