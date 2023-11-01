@@ -6,6 +6,7 @@ import Box from './src/components/Box';
 import Contador from './src/components/Contador';
 import Icon from 'react-native-vector-icons/AntDesign';
 
+// função
 export default function App() {
   const signin = () => {
     alert('Cliquei');
@@ -33,7 +34,7 @@ export default function App() {
       </View>
 
     <View style={styles.PrinterIcons}>
-       <Icon name='printer' size={30} onPress={click}/>
+       <Icon name='printer' size={30} onPress={signin}/>
     </View>
     <View style={styles.ReloadIcons}>
       <Icon name='reload1' size={29} onPress={click}/>
