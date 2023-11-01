@@ -29,6 +29,7 @@ export default function App() {
 
        <View style={[styles.button_buscar]}> 
         <Button lanbelButton="Buscar" onPress={signin} />
+        
       </View>
 
     <View style={styles.PrinterIcons}>
@@ -99,9 +100,9 @@ const styles = StyleSheet.create({
     bottom: '53%',
     right: '40%',
   }
-
 });
  
+
 // está na ramificação teste
 
 
