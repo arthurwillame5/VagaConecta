@@ -3,7 +3,6 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Icon from 'react-native-vector-icons/AntDesign'
 
 
-
 const Button = ({ lanbelButton, onpress  }) => {
     return (
         <TouchableOpacity style = {styles.button} onPress={onpress}>
@@ -32,6 +31,7 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         borderWidth: 2,
         borderColor: 'black',
+        
     },
     buttonText: {
         fontWeight: "bold"

@@ -5,6 +5,8 @@ import Button from './src/components/Button';
 import Box from './src/components/Box';
 import Contador from './src/components/Contador';
 import Icon from 'react-native-vector-icons/AntDesign';
+import BoxStatus from './src/components/BoxStatus';
+import TextVersion from './src/components/TextVersion';
 
 // função
 export default function App() {
@@ -22,6 +24,7 @@ export default function App() {
       <Title/>
     <View style={[styles.Contador]}>
       <Contador/>
+
     </View>
 
       <View style={[styles.button_entrada]}>
@@ -43,6 +46,12 @@ export default function App() {
     <View style={styles.bars}>
       <Icon name='bars' size={30} onPress={click}/>
     </View>
+    
+      <BoxStatus lanbelbox='Caixa Fechado'/>
+
+    <View style={styles.ContainerVersion}>
+      <TextVersion style={{color: '#635A5A' }}/>
+    </View>
 
     </View>
 
@@ -60,13 +69,13 @@ const styles = StyleSheet.create({
   },
   button_entrada: {
     display: 'flex',
-   // backgroundColor: 'black',
+   //backgroundColor: 'black',
    // width: '40%',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
    // margin: '10%',
-    bottom: '51.4%',
+    bottom: '47.4%',
     right: '9%',
   },
   button_buscar: {
@@ -77,31 +86,32 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     //margin: 10,
-    bottom: '61%',
+    bottom: '57%',
     left: '10%',
   },
    Contador: {
-    bottom: '12%',
+    bottom: '9%',
    },
-   ButtonIcons: {
-
-  }, 
   PrinterIcons: {
    // backgroundColor: 'black',
-    bottom: '46.6%',
+    bottom: '44.6%',
     left: '32%',
   },
   ReloadIcons: {
-    bottom: '50%',
+    bottom: '48%',
     left: '43%',
    // backgroundColor: 'black',
   },
   bars: {
    // backgroundColor: 'black',
-    bottom: '53%',
+    bottom: '51%',
     right: '40%',
     //display: 'flex'
-  }
+  },
+   ContainerVersion: {
+    position: 'absolute',
+    bottom: '6%',
+  },
 });
  
 
