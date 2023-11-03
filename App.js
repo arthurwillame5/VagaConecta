@@ -7,6 +7,8 @@ import Contador from './src/components/Contador';
 import Icon from 'react-native-vector-icons/AntDesign';
 import BoxStatus from './src/components/BoxStatus';
 import TextVersion from './src/components/TextVersion';
+import IconBars from './src/components/IconBars';
+
 
 // função
 export default function App() {
@@ -14,9 +16,6 @@ export default function App() {
     alert('Cliquei');
   }
 
-  const click = () => {
-    alert('funcionando');
-  }
   
   return (
     <View style={styles.container}>
@@ -40,11 +39,11 @@ export default function App() {
        <Icon name='printer' size={30} onPress={signin}/>
     </View>
     <View style={styles.ReloadIcons}>
-      <Icon name='reload1' size={29} onPress={click}/>
+      <Icon name='reload1' size={29}/>
     </View>
 
     <View style={styles.bars}>
-      <Icon name='bars' size={30} onPress={click}/>
+      <IconBars/>
     </View>
     
       <BoxStatus lanbelbox='Caixa Fechado'/>
@@ -105,7 +104,7 @@ const styles = StyleSheet.create({
   bars: {
    // backgroundColor: 'black',
     bottom: '51%',
-    right: '40%',
+    right: '41%',
     //display: 'flex'
   },
    ContainerVersion: {
@@ -114,6 +113,7 @@ const styles = StyleSheet.create({
   },
 });
  
+
 
 // segundary
 

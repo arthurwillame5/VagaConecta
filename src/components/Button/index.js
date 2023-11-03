@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import Icon from 'react-native-vector-icons/AntDesign'
+import { StyleSheet, Text, TouchableOpacity} from "react-native";
 
 
 const Button = ({ lanbelButton, onpress  }) => {
@@ -11,13 +10,7 @@ const Button = ({ lanbelButton, onpress  }) => {
     );
 }
 
-const Buttonicon = ({click}) => {
-    return (
-    <TouchableOpacity onPress={click}>
-        <Icon/>
-    </TouchableOpacity>
-    );
-}
+
 
 export default Button;
 
