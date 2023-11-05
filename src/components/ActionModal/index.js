@@ -1,14 +1,15 @@
 import React from "react";
 import { SafeAreaView, View, TouchableOpacity, Text, StyleSheet} from "react-native";
 
-export function ActionModal( handleClose) {
+    export function ActionModal({ HandleClose }) {
     return (
         <SafeAreaView style={style.container}> 
-            <TouchableOpacity style={{flex: 1, zIndex: 9, }} onPress={handleClose}></TouchableOpacity>
+            <TouchableOpacity style={{flex: 1, zIndex: 9,}} onPress={HandleClose}></TouchableOpacity>
 
             <View style={style.content}>
-                <View style={style.ActionButton} onPress={ () => {}}>
-                    <TouchableOpacity style={style.ActionText}>
+                {/* botao do modal */}
+                <View style={style.ActionButton}>
+                    <TouchableOpacity style={style.ActionText} onPress={ () => {}}>
                         <Text>Caixa</Text>
                     </TouchableOpacity>
     
@@ -27,6 +28,8 @@ export function ActionModal( handleClose) {
 const style = StyleSheet.create({
     container: {
         flex:1,
+        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+
         
     },
     content: {

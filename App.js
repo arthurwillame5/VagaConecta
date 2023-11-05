@@ -31,7 +31,7 @@ export default function App() {
        </View> 
 
        <View style={[styles.button_buscar]}> 
-        <Button lanbelButton="Buscar" onPress={signin} />
+        <Button lanbelButton="Buscar" icon={<Icon name='car'/>} onPress={signin} />
         
       </View>
 

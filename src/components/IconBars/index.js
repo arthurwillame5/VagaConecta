@@ -1,8 +1,9 @@
 import React from "react";
-import { View, StyleSheet, Text, TouchableOpacity, Modal } from "react-native";
+import { View, StyleSheet, Text, TouchableOpacity, Modal, Animated} from "react-native";
 import Icon from 'react-native-vector-icons/AntDesign'; 
 import { useState } from "react";
 import { ActionModal } from "../ActionModal"; 
+
 
 
 export default function IconBars() {
@@ -20,15 +21,16 @@ const [visibleModal, setVisibleModal] = useState(false)
          transparent={true}
          onRequestClose={() => setVisibleModal(false)}
         >
-            <ActionModal
-            handleClose={ () => setVisibleModal(false)}
-            
-            />
+         <ActionModal 
+          HandleClose={ () => setVisibleModal(false)}
+         />
         </Modal>
 
     </View>
   );
 }
+
+
 
 const styles = StyleSheet.create({
     IconBars: {
