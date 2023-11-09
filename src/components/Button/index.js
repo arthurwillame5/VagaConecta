@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, TouchableOpacity} from "react-native";
+import  Icon  from "react-native-vector-icons/AntDesign";
 
 
 const Button = ({ lanbelButton, onpress  }) => {
     return (
         <TouchableOpacity style = {styles.button} onPress={onpress}>
             <Text style={styles.buttonText}>{lanbelButton}</Text>
+            <Icon style={styles.icon} name="car" size={20}/>
         </TouchableOpacity>
+        
     );
 }
 
@@ -27,6 +30,12 @@ const styles = StyleSheet.create({
         
     },
     buttonText: {
-        fontWeight: "bold"
+        fontWeight: "bold",
+        top: '23%',
+        left: '5%'
     },
+    icon: {
+        bottom: '31%',
+        right: '28%',
+    }
 }); 

@@ -1,23 +1,21 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Title from './src/components/Title/index'
-import Button from './src/components/Button';
+import Button, { ButtonBuscar } from './src/components/Button';
 import Box from './src/components/Box';
 import Contador from './src/components/Contador';
 import Icon from 'react-native-vector-icons/AntDesign';
 import BoxStatus from './src/components/BoxStatus';
 import TextVersion from './src/components/TextVersion';
 import IconBars from './src/components/IconBars';
+import Buscar from './src/components/ButtonBuscar';
 
-
-// função
 export default function App() {
   const signin = () => {
     alert('Cliquei');
-  }
-
-  
+  }  
   return (
+    
     <View style={styles.container}>
       <Box/>
       <Title/>
@@ -27,11 +25,11 @@ export default function App() {
     </View>
 
       <View style={[styles.button_entrada]}>
-        <Button lanbelButton="Entrada" onPress={signin} />
+        <Button lanbelButton="Entrada" onPress={signin}/>
        </View> 
 
        <View style={[styles.button_buscar]}> 
-        <Button lanbelButton="Buscar" icon={<Icon name='car'/>} onPress={signin} />
+        <Buscar lanbelButton="Buscar"  onPress={signin} />
         
       </View>
 
@@ -39,7 +37,7 @@ export default function App() {
        <Icon name='printer' size={30} onPress={signin}/>
     </View>
     <View style={styles.ReloadIcons}>
-      <Icon name='reload1' size={29}/>
+      <Icon name='reload1' size={29} onPress={signin}/>
     </View>
 
     <View style={styles.bars}>

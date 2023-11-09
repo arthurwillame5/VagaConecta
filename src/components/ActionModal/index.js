@@ -12,7 +12,7 @@ import { SafeAreaView, View, TouchableOpacity, Text, StyleSheet} from "react-nat
                     <TouchableOpacity style={style.ActionText} onPress={ () => {}}>
                         <Text>Caixa</Text>
                         <Text>Patio</Text>
-                        <Text>Caixadepagamento</Text>
+                        <Text>Caixa</Text>
                     </TouchableOpacity>
     
                 <View style={{backgroundColor: '#2BC9D3', position: 'absolute', top: 0, height: '19%', width: '100%'}}>
