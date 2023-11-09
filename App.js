@@ -16,43 +16,38 @@ export default function App() {
   }  
   return (
     
-    <View style={styles.container}>
-      <Box/>
-      <Title/>
-    <View style={[styles.Contador]}>
-      <Contador/>
-
-    </View>
-
-      <View style={[styles.button_entrada]}>
-        <Button lanbelButton="Entrada" onPress={signin}/>
-       </View> 
-
-       <View style={[styles.button_buscar]}> 
-        <Buscar lanbelButton="Buscar"  onPress={signin} />
-        
+  <View style={styles.container}>
+          <Box/>
+          <Title/>
+      <View style={[styles.Contador]}>
+           <Contador/>
       </View>
 
-    <View style={styles.PrinterIcons}>
-       <Icon name='printer' size={30} onPress={signin}/>
-    </View>
-    <View style={styles.ReloadIcons}>
-      <Icon name='reload1' size={29} onPress={signin}/>
-    </View>
+      <View style={[styles.button_entrada]}>
+            <Button lanbelButton="Entrada" onPress={signin}/>
+      </View> 
 
-    <View style={styles.bars}>
-      <IconBars/>
-    </View>
-    
-      <BoxStatus lanbelbox='Caixa Fechado'/>
+       <View style={[styles.button_buscar]}> 
+            <Buscar lanbelButton="Buscar"  onPress={signin} />  
+      </View>
 
-    <View style={styles.ContainerVersion}>
-      <TextVersion style={{color: '#635A5A' }}/>
-    </View>
+      <View style={styles.PrinterIcons}>
+           <Icon name='printer' size={30} onPress={signin}/>
+      </View>
+      <View style={styles.ReloadIcons}>
+          <Icon name='reload1' size={29} onPress={signin}/>
+      </View>
 
-    </View>
+      <View style={styles.bars}>
+          <IconBars/>
+      </View>
+           <BoxStatus lanbelbox='Caixa Fechado'/>
+      <View style={styles.ContainerVersion}>
+           <TextVersion style={{color: '#635A5A' }}/>
+      </View>
 
-    
+  </View>
+  
   );
 }
 
@@ -113,6 +108,6 @@ const styles = StyleSheet.create({
  
 
 
-// segundary
+
 
 
