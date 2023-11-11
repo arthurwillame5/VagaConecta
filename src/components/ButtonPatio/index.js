@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, TouchableOpacity, Image} from "react-native";
-import  Icon  from "react-native-vector-icons/AntDesign";
+
 
 
 const ButtonPatio = ({}) => {

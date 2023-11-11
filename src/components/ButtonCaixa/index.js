@@ -19,7 +19,7 @@ export default ButtonCaixa;
 
 const styles = StyleSheet.create({
     button: {
-       // backgroundColor: '#2BC9D3',
+      //  backgroundColor: '#2BC9D3',
         width: '100%',
         height: '7%',
         top: '17%',
@@ -28,13 +28,13 @@ const styles = StyleSheet.create({
         //borderRadius: 16,
         //borderWidth: 2,
         borderColor: 'black',
-        marginTop: -18, 
-        fontSize: 15,       
+        marginTop: -18,        
     },
     buttonText: {
         fontWeight: "bold",
         top: '35%',
-        right: '2%'
+        right: '2%',
+        fontSize: 15,
     },
     icon: {
         bottom: '17%',
