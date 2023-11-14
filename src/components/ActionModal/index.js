@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaView, View, TouchableOpacity, Text, StyleSheet, Image} from "react-native";
-import ButtonPatio from "../ButtonPatio";
-import ButtonCaixa from "../ButtonCaixa";
+import ButtonPatio from "../ButtonCaixa";
+import ButtonCaixa from "../ButtonPatio";
 import ButtonClientes from "../ButtonClientes";
 import ButtonSair from "../ButtonSair";
 import TitleModal from "../TittleModal";
