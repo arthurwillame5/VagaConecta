@@ -1,11 +1,18 @@
+import { useNavigation } from "@react-navigation/native";
 import React, { Component } from "react";
 import { StyleSheet, Text, TouchableOpacity} from "react-native";
 import  Icon  from "react-native-vector-icons/AntDesign";
 
 
-const Button = ({ lanbelButton, onpress  }) => {
+
+const Button = ({ lanbelButton}) => {
+    const navigation = useNavigation();
+
+    const onPressButton = () => {
+        navigation.navigate('Vaga')
+    }
     return (
-        <TouchableOpacity style = {styles.button} onPress={onpress}>
+        <TouchableOpacity style = {styles.button} onPress={onPressButton}>
             <Text style={styles.buttonText}>{lanbelButton}</Text>
             <Icon style={styles.icon} name="car" size={20}/>
         </TouchableOpacity>
