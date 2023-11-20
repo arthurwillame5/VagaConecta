@@ -13,7 +13,7 @@ function MyStack() {
     <Stack.Navigator>
       <Stack.Screen name="VagaConecta" component={Home} options={{title: 'VagaConecta', headerStyle: { height: 0,}}}/>
       <Stack.Screen name='Vaga' component={Vaga} options={{title: 'VagaConecta', headerStyle: { height: 0,}}}/>
-      <Stack.Screen name='Entrada' component={Entrada}/>
+      <Stack.Screen name='Entrada' component={Entrada} options={{title: 'Entrada', headerStyle: { height: 0,}}}/>
     </Stack.Navigator>
   );
 }

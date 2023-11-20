@@ -3,9 +3,15 @@ import { StyleSheet, Text, TouchableOpacity} from "react-native";
 
 
 
-const Button_confirmar_vagas = ({ onpress  }) => {
+const Button_confirmar_vagas = ({ onPress, confirmarAtivado }) => {
     return (
-        <TouchableOpacity style = {styles.ButtonBuscar} onPress={onpress}>
+        <TouchableOpacity style={[
+            styles.ButtonBuscar,
+            { backgroundColor: confirmarAtivado ? '#3067D1' : 'gray' },
+          ]}
+          onPress={onPress}
+          disabled={!confirmarAtivado}
+        >
             <Text style={{color: 'white', fontWeight: 'bold'}}>Confirmar</Text>
         </TouchableOpacity>
     );

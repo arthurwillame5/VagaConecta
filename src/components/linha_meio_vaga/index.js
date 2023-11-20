@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'white',
     borderStyle: 'dashed',
-    bottom: "108%",
+    top: "15%",
     left: '50%'
   },
 });
