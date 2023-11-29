@@ -10,7 +10,7 @@ class Contador extends Component {
   }
 
   incrementarContador = () => {
-    if (this.state.contador < 30) {
+    if (this.state.contador < 12) {
       this.setState({ contador: this.state.contador + 1 });
     }
   }
@@ -25,7 +25,7 @@ class Contador extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.contadorText}>
-          Disponibilidade: {this.state.contador}/30
+          Disponibilidade: {this.state.contador}/12
         </Text>
         {/* Não exibe botões na tela, mas você pode chamar as funções em resposta a eventos de botão */}
       </View>

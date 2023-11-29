@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, TouchableOpacity} from "react-native";
 import  Icon  from "react-native-vector-icons/AntDesign";
+import { useNavigation } from "@react-navigation/native";
 
+const Buscar = ({ lanbelButton}) => {
+    const navigation = useNavigation();
 
-const Buscar = ({ lanbelButton, onpress  }) => {
+    const onPressButton = () => {
+        navigation.navigate('Buscar')
+    }
+
     return (
-        <TouchableOpacity style = {styles.ButtonBuscar} onPress={onpress}>
+        <TouchableOpacity style = {styles.ButtonBuscar} onPress={onPressButton}>
             <Text style={styles.ButtonBuscarText}>{lanbelButton}</Text>
             <Icon style={styles.iconBuscar} name="search1" size={20}/>
         </TouchableOpacity>
