@@ -4,17 +4,22 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useFocusEffect } from "@react-navigation/native";
 
 export default function Buscar() {
+  // Array é armazenado no estado 'data'
   const [data, setData] = useState([]);
 
   async function handleFetchData() {
+    // Recupera o array do AsyncStorage e converte de volta para objetos JavaScript
     const infoVeiculo = await AsyncStorage.getItem("@saveveiculo:veiculo");
-    const data = infoVeiculo ? JSON.parse(infoVeiculo) : [];
-    setData(data);
+    
+    // Atualiza o estado 'data' com o array recuperado
+    const newData = infoVeiculo ? JSON.parse(infoVeiculo) : [];
+    setData(newData);
     console.log(infoVeiculo);
   }
 
   useFocusEffect(
     useCallback(() => {
+      // Chama a função para recuperar dados ao focar no componente
       handleFetchData();
     }, [])
   );
@@ -22,7 +27,7 @@ export default function Buscar() {
   return (
     <View style={styles.container}>
       <FlatList
-        data={data}
+        data={data} // Utiliza o array 'data' para renderizar a FlatList
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
           <View style={styles.itemContainer}>

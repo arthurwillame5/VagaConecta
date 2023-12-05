@@ -17,9 +17,13 @@ export default function Entrada_formulario_clientes() {
 
   
 
-   async function handleNew(){
+  async function handleNew() {
+    if (!nome || !email || !telefone || !cpf) {
+      alert('Por favor, preencha todos os campos obrigatórios.');
+      return;
+    }
     const id = uuid.v4();
-    //objeto
+    //objeto Cliente
     const newData = {
       id,
       nome,
@@ -29,8 +33,9 @@ export default function Entrada_formulario_clientes() {
     }
 
     await AsyncStorage.setItem("@saveveiculo:veiculo", JSON.stringify(newData));
-    alert('Veiculo cadastrado com sucesso!')
+    alert('Cliente cadastrado com sucesso!')
     console.log(newData)
+
   }
 
  
@@ -54,25 +59,29 @@ export default function Entrada_formulario_clientes() {
           style={styles.Username}
           placeholder='Nome'
           onChangeText={setNome}
-            value={nome}/>
+            value={nome}
+            required/>
         <TextInput 
           style={styles.Email}
           placeholder='Email'
           keyboardType='email-address'
           onChangeText={setEmail}
-          value={email}/>
+          value={email}
+          required/>
         <TextInput 
           style={styles.Telefone}
           placeholder='Telefone'
           keyboardType='phone-pad'
           onChangeText={setTelefone}
-          value={telefone}/>
+          value={telefone}
+          required/>
         <TextInput 
           style={styles.cpf}
           placeholder='CPF'
           keyboardType='phone-pad'
           onChangeText={setCPF}
-          value={cpf}/>
+          value={cpf}
+          required/>
         </View>
         <View>
           <Button_form style={styles.button_cadastrar} onPress={handleNew}/>

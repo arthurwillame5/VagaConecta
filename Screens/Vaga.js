@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 import Vaga from '../src/components/vaga_prime';
@@ -28,7 +28,7 @@ export default function VagaScreen() {
 
   const renderVagas = () => {
     const vagasDataEsquerda = [
-      { numero: 1, label: 'V1' },
+      { numero: 1, label: 'v1'},
       { numero: 2, label: 'V2' },
       { numero: 3, label: 'V3' },
       { numero: 4, label: 'V4' },
@@ -65,14 +65,16 @@ export default function VagaScreen() {
           ...vaga.customStyle,
           left: '70%',
           bottom: '105%',
-          
+          borderColor: 'white',
           borderTopWidth: 0,
           borderLeftWidth: 0,
           borderRightWidth: 2,
         }}
       />
+         
     ));
-
+    
+        
     return (
       <>
         {vagasEsquerda}
@@ -82,7 +84,7 @@ export default function VagaScreen() {
   };
 
   return (
-    <View style={{ backgroundColor: '#171616', height: '100%' }}>
+    <View style={{ backgroundColor: 'black', height: '100%' }}>
       <CaixaVagas />
       <TextVagas />
       
@@ -96,3 +98,6 @@ export default function VagaScreen() {
     </View>
   );
 }
+
+// Funções, handleConfirmarClick, e renderVagas são métodos que operam sobre o estado interno do objeto VagaScreen
+// Os componentes (CaixaVagas, TextVagas, ButtonConfirmarVagas, Linha_meio_vaga, e Vaga) podem ser vistos como componentes encapsulados, onde cada um tem sua própria responsabilidade e funcionalidade específica.
