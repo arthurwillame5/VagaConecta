@@ -84,7 +84,7 @@ export default function VagaScreen() {
   };
 
   return (
-    <View style={{ backgroundColor: 'black', height: '100%' }}>
+    <View style={{ backgroundColor: '#252524', height: '100%' }}>
       <CaixaVagas />
       <TextVagas />
       

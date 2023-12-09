@@ -57,13 +57,15 @@ export default function Entrada() {
           <Button_form_cliente  style={styles.Button_form_cliente} /> 
       </View>
           <Text style={styles.Title}>Entrada</Text>
-          <Text style={{fontSize: 20,}}>Vaga: {vagaEscolhida}</Text>
+          <Text style={{fontSize: 20, color: 'white'}}>Vaga: {vagaEscolhida}</Text>
       </View>
 
       <View style={styles.form}>
           <TextInput 
             style={styles.Username}
             placeholder='Placa'
+            color="white" 
+            placeholderTextColor='white'
             onChangeText={setPlaca}
             value={placa}
             required />
@@ -71,18 +73,24 @@ export default function Entrada() {
           <TextInput 
             style={styles.Email}
             placeholder='Cor'
+            color="white" 
+            placeholderTextColor='white'
             onChangeText={setCor}
             value={cor}
             required />
           <TextInput 
             style={styles.Telefone}
             placeholder='Marca/Modelo'
+            color="white" 
+            placeholderTextColor='white'
             onChangeText={setModeloMarca}
             value={modeloMarca}
             required />
           <TextInput 
             style={styles.cpf}
             placeholder='Observações'
+            color="white" 
+            placeholderTextColor='white'
             onChangeText={setObservações}
             value={observações}
             />
@@ -101,10 +109,11 @@ export default function Entrada() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#252524'
   },
   header: {
     height: '22%',
-    backgroundColor: '#3498db',
+    backgroundColor: '#003B88',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -118,7 +127,8 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     textAlign: 'center',
-    bottom: '6%'
+    bottom: '6%',
+    color: 'white'
   },
   Vagas: {
     fontSize: 20,
@@ -169,7 +179,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: '85%',
     left: '15%',
-    backgroundColor: '#3498db',
+    backgroundColor: '#003B88',
     borderRadius: 16,
     borderColor: 'black',
     borderWidth: 1
@@ -188,7 +198,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: '85%',
     left: '55%',
-    backgroundColor: '#3498db',
+    backgroundColor: '#003B88',
     borderRadius: 16,
     borderColor: 'black',
     borderWidth: 1,

@@ -25,7 +25,7 @@ export default Buscar;
 
 const styles = StyleSheet.create({
     ButtonBuscar: {
-        backgroundColor: '#2BC9D3',
+        backgroundColor: '#003B88',
         width: 139,
         height: 40,
         justifyContent: 'center',
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         top: '23%',
         left: '3%',
+        color: 'white'
     },
     iconBuscar: {
         right: '28%',

@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     buttonText: {
-        color: 'black',
+        color: 'white',
         textAlign: 'center'
 }
 }); 

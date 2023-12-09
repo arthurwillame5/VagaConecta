@@ -35,7 +35,7 @@ class Contador extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#2BC9D3',
+    backgroundColor: '#003B88',
     width: 208,
     height: 40,
     borderRadius: 16,
@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
     
   },
   contadorText: {
-    fontWeight: "bold"
+    fontWeight: "bold",
+    color: 'white'
   }
 });
 

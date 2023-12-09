@@ -17,7 +17,7 @@ import TextVersion from '../TextVersion';
                     <ButtonClientes/>
                     <ButtonSair/>    
                     <TextVersion style={style.TextVersion}/>          
-                    <View style={{backgroundColor: '#2BC9D3', position: 'absolute',  height: '19%', width: '100%'}}>
+                    <View style={{backgroundColor: '#003B88', position: 'absolute',  height: '19%', width: '100%'}}>
                         <TitleModal/>
                     </View>
                 </View>
@@ -34,7 +34,7 @@ const style = StyleSheet.create({
     },
     ActionButton: {
        // zIndex: 99,
-       backgroundColor: 'white',
+       backgroundColor: '#252524',
         height: '100%',
         width: '75%',
 

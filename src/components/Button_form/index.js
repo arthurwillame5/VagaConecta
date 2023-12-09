@@ -18,7 +18,7 @@ export default Button_form;
 
 const styles = StyleSheet .create({
     button: {
-        backgroundColor: '#3067D1',
+        backgroundColor: '#003B88',
         width: '40%',
         height: '23%',
         justifyContent: 'center',

@@ -36,7 +36,7 @@ export default function Home() {
       </View>
 
       <View style={styles.bars}>
-          <IconBars/>
+        <IconBars/>
       </View>
            <BoxStatus lanbelbox='Caixa Fechado'/>
       <View style={styles.ContainerVersion}>
@@ -50,7 +50,7 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#252524',
     alignItems: 'center',
     justifyContent: 'center',
     

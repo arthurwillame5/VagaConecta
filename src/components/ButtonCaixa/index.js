@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
         top: '47%',
         right: '10%',
         fontSize: 15,
+        color: 'white'
     },
     caixa: {
         bottom: '20%',

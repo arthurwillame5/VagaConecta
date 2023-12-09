@@ -58,12 +58,16 @@ export default function Entrada_formulario_clientes() {
         <TextInput 
           style={styles.Username}
           placeholder='Nome'
+          color="white" 
+          placeholderTextColor='white'
           onChangeText={setNome}
             value={nome}
             required/>
         <TextInput 
           style={styles.Email}
           placeholder='Email'
+          color="white" 
+          placeholderTextColor='white'
           keyboardType='email-address'
           onChangeText={setEmail}
           value={email}
@@ -71,6 +75,8 @@ export default function Entrada_formulario_clientes() {
         <TextInput 
           style={styles.Telefone}
           placeholder='Telefone'
+          color="white" 
+          placeholderTextColor='white'
           keyboardType='phone-pad'
           onChangeText={setTelefone}
           value={telefone}
@@ -78,6 +84,8 @@ export default function Entrada_formulario_clientes() {
         <TextInput 
           style={styles.cpf}
           placeholder='CPF'
+          color="white" 
+          placeholderTextColor='white'
           keyboardType='phone-pad'
           onChangeText={setCPF}
           value={cpf}
@@ -94,10 +102,12 @@ export default function Entrada_formulario_clientes() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#252524'
+    
   },
   header: {
     height: '22%',
-    backgroundColor: '#3498db',
+    backgroundColor: '#003B88',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -106,17 +116,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     
+    
   },
   Title: {
     fontSize: 30,
     fontWeight: 'bold',
     textAlign: 'center',
-    bottom: '6%'
+    bottom: '6%',
+    color: 'white'
   },
   Vagas: {
     fontSize: 20,
     bottom: '10%',
-    textAlign: 'center'
+    textAlign: 'center',
+
   },
   Username: {
     margin: 10,
@@ -127,6 +140,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     marginTop: 20,
+
   },
   Email: {
     margin: 10,
@@ -137,6 +151,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     marginTop: 20,
+    
   },
   Telefone: {
     margin: 10,
@@ -162,7 +177,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: '85%',
     left: '15%',
-    backgroundColor: '#3498db',
+    backgroundColor: '#003B88',
     borderRadius: 16,
     borderColor: 'black',
     borderWidth: 1
@@ -172,18 +187,20 @@ const styles = StyleSheet.create({
   }, 
   form: {
     top: '5%',
-    alignItems: 'center'
+    alignItems: 'center',
 
   },
   button_cadastrar: {
+    backgroundColor: '#white'
   },
   Button_cliente_container: {
     position: 'absolute',
     top: '85%',
     left: '55%',
-    backgroundColor: '#3498db',
+    backgroundColor: '#003B88',
     borderRadius: 16,
     borderColor: 'black',
     borderWidth: 1,
-  }
+  },
+  
 });

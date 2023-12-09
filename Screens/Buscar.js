@@ -8,21 +8,21 @@ export default function Buscar() {
   const [data, setData] = useState([]);
 
   async function handleFetchData() {
-    // Recupera o array do AsyncStorage e converte de volta para objetos JavaScript
+  // Recupera o array do AsyncStorage e converte de volta para objetos JavaScript
     const infoVeiculo = await AsyncStorage.getItem("@saveveiculo:veiculo");
     
-    // Atualiza o estado 'data' com o array recuperado
+  // Atualiza o estado 'data' com o array recuperado
     const newData = infoVeiculo ? JSON.parse(infoVeiculo) : [];
     setData(newData);
     console.log(infoVeiculo);
-  }
+}
 
   useFocusEffect(
     useCallback(() => {
-      // Chama a função para recuperar dados ao focar no componente
+  // Chama a função para recuperar dados ao focar no componente
       handleFetchData();
-    }, [])
-  );
+  }, [])
+);
 
   return (
     <View style={styles.container}>

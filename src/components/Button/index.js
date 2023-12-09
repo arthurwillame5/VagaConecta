@@ -26,7 +26,7 @@ export default Button;
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: '#2BC9D3',
+        backgroundColor: '#003B88',
         width: 139,
         height: 40,
         justifyContent: 'center',
@@ -39,7 +39,9 @@ const styles = StyleSheet.create({
     buttonText: {
         fontWeight: "bold",
         top: '23%',
-        left: '5%'
+        left: '5%',
+        color: 'white'
+
     },
     icon: {
         bottom: '31%',

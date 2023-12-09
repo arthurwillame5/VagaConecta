@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
         width: '65%',
         borderBottomWidth: 1,
         bottom: '17%',
+        borderColor: 'white'
         
     },
     TextBoxStatus: {

@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
         top: '35%',
         right: '2%',
         fontSize: 15,
+        color: 'white'
     },
     icon: {
         bottom: '17%',
